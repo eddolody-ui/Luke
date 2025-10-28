@@ -4,11 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luke</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <header>
+        <div class="containerr">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-laptop"></i>Shopify
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="ecommance.html" class="active">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">About</a></li>                        
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Headphones</a></li>
+                            <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  
   <div class="container" id="container">
     <!-- Login Form -->
     <div class="form-container login-container">
@@ -65,6 +102,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="login.js"></script>
 </body>
 </html>

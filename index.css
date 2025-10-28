@@ -1,0 +1,79 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 50px;
+  background: white;
+  backdrop-filter: blur(10px);
+  position: sticky; top: 0; z-index: 1000;
+}
+.navbar .logo { font-size: 1.8rem; font-weight: bold; color: #4e89ae; }
+.navbar ul { display: flex; list-style: none; gap: 20px; }
+.navbar ul li a {
+  text-decoration: none; color: #4e89ae; font-weight: 500;
+  transition: 0.3s;
+}
+.navbar ul li a:hover { color: #4e89ae; }
+
+/* Hero Section */
+.hero {
+  display: flex; justify-content: center; align-items: center;
+  min-height: 90vh; padding: 20px;
+  background: linear-gradient(120deg, #e0f7fa, #fce4ec);
+}
+.hero-content {
+  max-width: 700px; text-align: center;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 15px; color: #333; }
+.hero h1 span { color: #4e89ae; }
+.role { font-size: 1.2rem; margin-bottom: 15px; color: #666; }
+.desc { margin-bottom: 25px; color: #444; }
+
+.buttons .btn, .buttons .btn-outline {
+  padding: 12px 25px; border-radius: 30px; margin: 8px;
+  font-weight: 500; text-decoration: none; transition: 0.3s;
+  display: inline-block;
+}
+.btn {
+  background: #4e89ae; color: #fff;
+}
+.btn:hover { background: #3a6f8f; }
+.btn-outline {
+  border: 1px solid #4e89ae; color: #4e89ae;
+}
+.btn-outline:hover { background: #4e89ae; color: #fff; }
+
+/* About */
+.about {
+  max-width: 800px; margin: 50px auto; text-align: center;
+  color: #555;
+}
+.about h2 { color: #4e89ae; margin-bottom: 15px; font-size: 2rem; }
+
+/* Services */
+.services { padding: 60px 20px; text-align: center; background: #fff; }
+.services h2 { color: #4e89ae; margin-bottom: 30px; font-size: 2rem; }
+.service-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; max-width: 1000px; margin: auto;
+}
+.service {
+  background: #f5f5f5;
+  border-radius: 12px; padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.service i {
+  font-size: 2rem; margin-bottom: 15px;
+  color: #4e89ae;
+}
