@@ -10,10 +10,11 @@ body {
 .navbar {
   display: flex; justify-content: space-between; align-items: center;
   padding: 20px 50px;
-  background: white;
+  background-color: transparent;
   backdrop-filter: blur(10px);
   position: sticky; top: 0; z-index: 1000;
 }
+
 .navbar .logo { font-size: 1.8rem; font-weight: bold; color: #4e89ae; }
 .navbar ul { display: flex; list-style: none; gap: 20px; }
 .navbar ul li a {
@@ -27,9 +28,21 @@ body {
   display: flex; justify-content: center; align-items: center;
   min-height: 90vh; padding: 20px;
   background: linear-gradient(120deg, #e0f7fa, #fce4ec);
+  background: no-repeat center/cover;
+  backdrop-filter: blur(2px);
 }
 .hero-content {
   max-width: 700px; text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .hero h1 { font-size: 3rem; margin-bottom: 15px; color: #333; }
 .hero h1 span { color: #4e89ae; }
@@ -44,7 +57,7 @@ body {
 .btn {
   background: #4e89ae; color: #fff;
 }
-.btn:hover { background: #3a6f8f; }
+.btn:hover { background: #3a6f8f;color: rgb(0, 0, 0);}
 .btn-outline {
   border: 1px solid #4e89ae; color: #4e89ae;
 }

@@ -8,12 +8,9 @@ body {
 
 /* Navbar */
 .navbar {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 20px 50px;
-  background: white;
-  backdrop-filter: blur(10px);
   position: sticky; top: 0; z-index: 1000;
 }
+
 .navbar .logo { font-size: 1.8rem; font-weight: bold; color: #4e89ae; }
 .navbar ul { display: flex; list-style: none; gap: 20px; }
 .navbar ul li a {
@@ -30,6 +27,16 @@ body {
 }
 .hero-content {
   max-width: 700px; text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .hero h1 { font-size: 3rem; margin-bottom: 15px; color: #333; }
 .hero h1 span { color: #4e89ae; }
